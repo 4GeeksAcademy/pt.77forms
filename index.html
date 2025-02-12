@@ -15,22 +15,30 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
 
   <body>
     <div class="container mx-auto w-75 mt-5 border border-dark p-0 rounded">
-      <div class="bg-light w-100 fs-3 p-1">Payment Form Example</div>
+      <div class="bg-light w-100 fs-3 p-1">
+        <b class="p-3">Payment Form Example</b>
+      </div>
 
-      <div class="p-2">
+      <div class="p-3">
         <div class="alert alert-danger" role="alert">
-          Some Fields Are Missing!
+          Some Fields Are Missing
         </div>
 
         <div class="row">
           <div class="mb-3 col-5">
             <form>
               <div class="form-group">
-                <label for="card-number">Card Number</label>
+                <label for="card-number" style="padding-bottom: 5px"
+                  ><b>Card Number</b></label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -43,7 +51,9 @@
           <div class="mb-3 col-3">
             <form>
               <div class="form-group">
-                <label for="CVC">CVC#</label>
+                <label for="CVC" style="padding-bottom: 5px"
+                  ><b>CVC Number</b></label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -54,7 +64,9 @@
             </form>
           </div>
           <div class="col-4">
-            <label for="amout-div">Amount</label>
+            <label for="amout-div" style="padding-bottom: 5px"
+              ><b>Amount</b></label
+            >
             <div class="input-group amount" id="amout-div">
               <span class="input-group-text" id="basic-addon1">$</span>
               <input
@@ -73,7 +85,9 @@
           <div class="col-6">
             <form>
               <div class="form-group">
-                <label for="First-Name">First Name</label>
+                <label for="First-Name" style="padding-bottom: 5px"
+                  ><b>First Name</b></label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -87,7 +101,9 @@
           <div class="col-6">
             <form>
               <div class="form-group">
-                <label for="Last-Name">Last Name</label>
+                <label for="Last-Name" style="padding-bottom: 5px"
+                  ><b>Last Name</b></label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -99,12 +115,14 @@
           </div>
         </div>
 
-        <!--Third row with city-->
-        <div class="row">
+        <!--third row with city-->
+        <div class="row pt-3">
           <div class="col-6">
             <form>
               <div class="form-group">
-                <label for="City">City</label>
+                <label for="City" style="padding-bottom: 5px"
+                  ><b>City</b></label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -116,7 +134,9 @@
           </div>
 
           <div class="col-3">
-            <label for="inputState">State</label>
+            <label for="inputState" style="padding-bottom: 5px"
+              ><b>State</b></label
+            >
             <select id="inputState" class="form-select">
               <option selected>Choose...</option>
               <option value="AL">Alabama</option>
@@ -176,18 +196,22 @@
           <div class="col-3">
             <form>
               <div class="form-group">
-                <label for="Postal-Code">Postal Code</label>
+                <label for="Postal-Code" style="padding-bottom: 5px"
+                  ><b>Postal Code</b></label
+                >
                 <input type="text" class="form-control" id="Postal-Code
                 placeholder=" XXXXX">
               </div>
             </form>
           </div>
         </div>
-        <!--Last row-->
-        <div class="row">
-          <label for="radio-group">Payment Type:</label>
-          <div class="col-3 d-flex" id="radio-group">
-            <div class="btn-group btn btn-secondary h-50 px-0">
+        <!--fourth row-->
+        <div class="row pt-2">
+          <div class="col-3">
+            <label for="radio-group" style="padding-bottom: 5px"
+            ><b>Payment Type:</b></label
+          >
+            <div class="btn-group btn btn-secondary h-25" id="radio-group">
               <div class="form-check form-check-inline">
                 <input
                   class="form-check-input"
@@ -196,7 +220,9 @@
                   id="inlineRadio1"
                   value="option1"
                 />
-                <label class="form-check-label" for="inlineRadio1">1</label>
+                <label class="form-check-label" for="inlineRadio1"
+                  ><i class="fa-brands fa-cc-mastercard"></i
+                ></label>
               </div>
               <div class="form-check form-check-inline">
                 <input
@@ -206,7 +232,9 @@
                   id="inlineRadio2"
                   value="option2"
                 />
-                <label class="form-check-label" for="inlineRadio2">2</label>
+                <label class="form-check-label" for="inlineRadio2"
+                  ><i class="fa-brands fa-cc-visa"></i
+                ></label>
               </div>
               <div class="form-check form-check-inline">
                 <input
@@ -216,7 +244,9 @@
                   id="inlineRadio3"
                   value="option3"
                 />
-                <label class="form-check-label" for="inlineRadio3">3 </label>
+                <label class="form-check-label" for="inlineRadio3"
+                  ><i class="fa-brands fa-cc-diners-club"></i
+                ></label>
               </div>
               <div class="form-check form-check-inline">
                 <input
@@ -226,26 +256,30 @@
                   id="inlineRadio4"
                   value="option4"
                 />
-                <label class="form-check-label" for="inlineRadio2">4</label>
+                <label class="form-check-label" for="inlineRadio2"
+                  ><i class="fa-brands fa-cc-amex"></i
+                ></label>
               </div>
             </div>
           </div>
 
-          <div class="col-3"></div>
+          <div class="col-3">
+            <style ="padding-bottom 5px"></style>
+          </div>
 
           <div class="col-6">
-            <label for="comment-section">Comments</label>
-            <div class="form-floating" id="comment-section">
-              <textarea
-                class="form-control"
-                placeholder="Leave a comment here"
-                id="floatingTextarea2"
-              ></textarea>
-              <p>Add any notes here.</p>
+            <label for="floatingTextarea2" style="padding-bottom: 5px">
+              <b>Message</b>
+            </label>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
             </div>
+            <p class="text-secondary">Add any notes here.</p>
           </div>
         </div>
       </div>
+
+      <!--last row-->
       <div class="bg-light w-100 fs-3 p-1 d-flex justify-content-end">
         <div>
           <button type="button" class="btn btn-secondary">Cancel</button>
